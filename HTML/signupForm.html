@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="signup.asp" method="post" id="signupform">
+        Name: <input type="text" id="name" class="form-control" name="username" value="" required pattern="[a-zA-Z]{1,}"/>
+        <br /><br />
+        <br />
+        Email: <input type="email" id="email" class="form-control" name="email" required placeholder="youremail@gmail.com"/>
+        <br /><br />
+
+        Password: <input type="password" name="password" minlength="6" maxlength="8"/>
+
+        DOB: <input type="date" name="dob" />
+
+        <br />
+        Gender: 
+        Male: <input type="radio" name="gender" value="male" checked />
+         Female:       <input type="radio" name="gender" value="female" />
+
+         <br />
+         Age: <input type="number" name="age" min="0" max="99">
+
+         <br />
+
+         <input type="checkbox" name="accept-terms" value="city1"> Accept Terms and conditions
+         <input type="checkbox" name="accept-terms" value="city2"> Not a Robot
+         <br />
+        <button type="submit">Click</button>
+        <input type="button" value="click" />
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

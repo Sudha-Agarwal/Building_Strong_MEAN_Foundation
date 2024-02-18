@@ -1,0 +1,26 @@
+p{
+    color:red;
+
+}
+
+/*Descendant Combinator */
+div li{
+    color:green;
+}
+
+/*Child Combinator*/
+ul > li{
+    color:blue;
+}
+/*Adjacent sibling Combinator */
+h2 + p{
+    color:purple;
+}
+
+/*Genral Sibling */
+h2 ~ p{
+    color:brown;
+}
+
+
+
