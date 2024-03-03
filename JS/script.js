@@ -1,3 +1,5 @@
+let global = "Global1";
+
 function handleMouseOver(){
     alert("Mouse over detected")
 }
@@ -124,8 +126,39 @@ for(var x of marks){
     console.log(x);
 }
 
+//array of objects
+var arrOfObj = [
+    {
+        id:1,
+        firstName :'sudha'
+    },
+    {
+        id:2,
+        firstName: 'ABC'
+    }
+];
+
+/*for(var obj of arrOfObj){
+    //console.log('Id: ' + obj.id + " Name: " + obj.firstName);
+    console.log(`Id: ${obj.id} Name: ${obj.firstName}`);
+    var x = 10;
+    console.log(`value of x is ${x.toFixed() * 2}`);
+    console.log('Value of x is ' + (x * 2));
+}*/
 
 
+
+//"Hello" + "World" => "Hello World"
+
+
+var person = [{
+    fname:'abc',
+    lname:'xyz'
+}]
+
+for(var x in person){
+    console.log(x);
+}
 
 
 

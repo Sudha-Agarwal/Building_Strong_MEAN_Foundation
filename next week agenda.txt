@@ -1,0 +1,17 @@
+Today's agenda(03-03-24)
+JS - callbacks, constructor functions, classes, arrays, let, const, scope of a variable
+
+next week:
+Assignment/self Study:
+loops - while, do while
+switch,
+new Object()
+Object.create()
+
+Array:
+new
+Array.from
+
+Next week Topics:
+Functional Programming concepts - functions are considered as first class citizen/object
+callbacks, closures, IIFE, Asynchronous programming - ajax, promise, fetch, arrow functions
