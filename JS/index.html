@@ -15,6 +15,9 @@
 
     Name:<input type="text" onkeypress="handleKeyPress()">
 
+    <p id="demo">static Content</p>
+    <button id="btn">Click to change text</button>
+
 
     <!-- Internal JS-->
     <script>
@@ -26,6 +29,38 @@
         function handleKeyPress(){
             alert('enterd a value')
         }
+
+        function changeText(){            
+            document.getElementById('demo').innerText = '<b>changed by JS</b>';
+            document.getElementById('demo').style.color='red';
+        }
+        var someCondition = false;
+
+        if(someCondition){
+            document.getElementById('btn').addEventListener('click', function(){
+            alert('Button clicked')
+        });
+        }
+        else{
+            document.getElementById('btn').addEventListener('mouseover', function(){
+            alert('Button mouseOver')
+        });
+
+        }
+
+        var obj = {
+            id:1
+        }
+
+        x = 10;
+        var x = null;
+        console.log(x)
+
+       //obj = null;
+
+        //console.log(obj.id);
+
+
 
         //function calling/invocation
         //handleClick();

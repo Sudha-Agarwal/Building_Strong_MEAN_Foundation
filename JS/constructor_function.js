@@ -51,7 +51,15 @@ function Person(firstName, lastName, age){
         return `Hello ${this.firstName} ${this.lastName} with age ${this.age}`;
         //console.log(`Hello ${this.firstName} ${this.lastName} with age ${this.age}`)
     }   
+   
 }
+
+var obj = {
+    id:1
+}
+
+obj.id
+var person1 = new Person('Sudha', 'Agarwal', 30);
 
 function Student(firstName, lastName, age, RollNo){
     this.firstName = firstName;

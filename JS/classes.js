@@ -1,16 +1,25 @@
 class Person{
     firstName;
     lastName;
+    age;
 
-    constructor(firstName, lastName){
+    constructor(firstName, lastName, age){
         console.log('parent contructor called')
         this.firstName = firstName;
         this.lastName = lastName;         
+        this.age = age;
     }    
     fullName(){
         console.log(`${this.firstName} ${this.lastName}`)
     } 
 }
+
+var person1 = new Person('sudha', 'agarwal',30);
+person1.age = -30;
+
+
+
+console.log('person age is: ' + person1.age);
 
 class Person1{
 
@@ -42,3 +51,5 @@ student1.age = -20;
 student1.fullName();
 student1.calculateMarks();
 console.log(student1.age)
+
+
