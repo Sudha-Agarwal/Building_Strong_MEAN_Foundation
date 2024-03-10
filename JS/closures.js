@@ -3,7 +3,8 @@ function outer(){
     console.log('outer function code')
     function increment(){
         counter++;
-        console.log(counter);
+        return counter;
+        //console.log(counter);
     } 
     function decrement(){
         counter--;
@@ -18,7 +19,7 @@ function outer(){
 
 counter++;
 var innerFunc = outer();
-innerFunc.incrementFun();
+var counter = innerFunc.incrementFun();
 innerFunc.incrementFun();
 innerFunc.decrementFun();
 

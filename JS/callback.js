@@ -33,11 +33,11 @@ one(function two(){
 })
 //two();
 */
-function serverRequest(callback){
+function serverRequest(resolve){
     var data;
     setTimeout(function(){
         data = {message:'data from server'};     
-        callback(data);   
+        resolve(data);
     }, 1000);
    
 }
@@ -47,7 +47,13 @@ function printData(data){
 }
 
 //serverRequest(printData);
-serverRequest(function(data){
+
+//serverRequest(printData);
+/*serverRequest(function(data){
     console.log(data.message)
-})
+});*/
+
+serverRequest(data => console.log(data.message));
+
 //printData(data);
+
