@@ -4,6 +4,9 @@ function sum(num1, num2){
     return res;
 }
 
+ var x = 10;
+x = 'string';
+
 var obj = {id:1};
 //obj = 2;
 
