@@ -32,7 +32,9 @@ class Person{
     }
 }
 
+class Employee extends Person{
 
+}
 let person1:Person = new Person('123','abc','xyz');
 person1.ssn = '1234'; //calling the setter function
 console.log(person1.ssn);//calling the getter function

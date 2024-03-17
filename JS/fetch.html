@@ -4,17 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
-    <p id="demo"></p>
+    <div id="demo"></div>
     
     <script>
-        fetch('https://jsonplaceholder.typicode.com/posts/1')
+        fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())     
-        .then(data =>console.log(data))
+        .then(data => {
+            let authors = [];
+            authors = data;
+
+            let output = '';
+
+            output += `<div class="container-lg my-5">
+                <div class="m-4">
+                    <table class= "table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>User Name</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>`
+                            authors.forEach(item =>{
+                                output += `
+                                <tr>
+                                    <td>${item.name}</td>
+                                    <td>${item.username}</td>
+                                </tr>
+                                `
+
+                            })
+                            output+= '</tbody></table></div></div>';
+
+                            demo.innerHTML = output;
+                        
+
+
+        })
         .catch(error =>console.log(error));
 
-        async function fetchData(){
+        /*async function fetchData(){
             try{
             const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
                 if(!response.ok){
@@ -29,7 +64,7 @@
 
         }
 
-        fetchData();
+        fetchData();*/
        
        
 
