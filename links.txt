@@ -1,0 +1,11 @@
+Introduction to GIT https://docs.google.com/document/d/1jzIpukklgcMcr7x7TeU63Yrnkxb8oZdNaGxIft5jjfA/edit?usp=sharing
+
+TypeScript Introduction:
+https://docs.google.com/document/d/1NoD6ZzIOnrkQiPSntoQMfi2rNLcUjERXrWwTqdroBaU/edit?usp=sharing
+
+Angular:
+https://docs.google.com/document/d/1sWczagHnRYy3Cn7UBb1KbUpdyUUziA08eeO_RHVNvWY/edit?usp=sharing
+
+JavaScript:
+https://docs.google.com/document/d/1XdA4fMJqhNpUgePaaiiJ6Aw6dOoe2iLM5J2EsG9kjJg/edit?usp=sharing
+
