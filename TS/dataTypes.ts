@@ -27,6 +27,18 @@ let str:string;
 if(typeof value === 'string'){
      str = value;
 }
+
+let value: any = "hello";
+value.toUpperCase();   // No error (even if value is not a string)
+
+let value: unknown = "hello";
+
+// value.toUpperCase(); ❌ Error
+
+if (typeof value === "string") {
+  value.toUpperCase(); // ✅ Allowed
+}
+
 let x1;
 console.log(x1);
 console.log(str)
